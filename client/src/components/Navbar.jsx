@@ -30,7 +30,7 @@ export default function Navbar() {
           </Link>
         ))}
       </ul>
-
+{/* add this  */}
       {/* Hamburger menu icon for small screens */}
       <div
         onClick={() => setOpen(!open)}
