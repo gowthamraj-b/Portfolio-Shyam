@@ -1,40 +1,82 @@
 import React, { useEffect, useState } from 'react'
-import h_img from '../assets/h_i.png'
+import { FaArrowRight } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
+import LinkedIn from "../assets/socials/linkedin.svg";
+import Insta from "../assets/socials/insta.svg"
+import GitHub from "../assets/socials/github.svg";
+import SocialBar from './SocialBar';
+
 
 export default function Home() {
-
-  const[text,setText]=useState('');
-
-  const originalText="Hello, I'm Shyam FrountEnd developer";
-
-  useEffect(() => {
-    let index = 0;
-
-    const intervalId = setInterval(() => {
-      setText(originalText.slice(0, index + 1));
-      index++;
-
-      if (index === originalText.length) {
-        clearInterval(intervalId);
-      }
-    }, 100); // Adjust the interval as needed
-
-    return () => clearInterval(intervalId);
-  }, [originalText]);
-  
 
   
   return (
     <>
-      <div className='min-h-screen  bg-gray-950   flex justify-around items-center'>
-        <div>
-          <h1 className="text-4xl font-bold text-center text-white">{text}</h1> 
+    <div name="home" className='h-screen bg-gradient-to-b from-black to-gray-800 text-white '>
+      <div className='flex justify-around items-center h-full px-5'>
+        <div className='flex flex-col items-center text-center  '>
+          <h3 className='font-signature font-thin text-6xl  tracking-wider'>Hi, <span className='text-green-400'>I'm</span> Shyam</h3>
+          <TypeAnimation
+            className="font-semibold text-transparent leading-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 items-center "
+            sequence={[
+              // Same substring at the start will only be typed once, initially
+              "If you think math is hard, try web design",
+              1000,
+              "Have no fear of perfection—you'll never reach it." ,
+              1000,
+              "You don't have to be 'a creative' to be creative.",
+              1000,
+              "I strive for two things in design: simplicity and clarity.",
+              1000,
+            ]}
+            speed={40}
+            style={{ fontSize: "2em" }}
+            repeat={Infinity}
+          />
+    
+          <div className='mt-6 mb-3'>
+            
+            <button className='flex px-6 py-2 gap-3 items-center bg-black rounded-md ' >
+              <span className='bg-fixed' >Portfolio</span>
+              <span>
+                <FaArrowRight className='text-green-400 hover:rotate-12'  />
+              </span>
+            </button>
+          </div>
         </div>
-        <div>
-          <img src={h_img} alt="" className='' />
-        </div>
-
       </div>
+      
+
+    </div>
+    
+      <div className="bg-gray-400 bg-opacity-15 w-20 rounded py-1 px-2 absolute left-0 top-1/3 hidden md:block ">
+        <div className="my-1">
+          <a
+            href="#"
+            className="p-3 hover:bg-gray-950 block rounded transition-all duration-500"
+          >
+            <img src={LinkedIn} alt="" className="w-10 h-10" />
+          </a>
+        </div>
+        <div className="my-1">
+          <a
+            href="https://www.instagram.com/gowthamrajlegend/"
+            className="p-3 hover:bg-gray-950 block rounded transition-all duration-500"
+          >
+            <img src={Insta} alt="" className="w-10 h-10" />
+          </a>
+        </div>
+        <div className="my-1">
+          <a
+            href="https://github.com/gowthamrajlegend/" 
+            className="p-3 hover:bg-gray-950 block rounded transition-all duration-500"
+          >
+            <img src={GitHub} alt="" className="w-10 h-10" />
+          </a>
+        </div>
+      </div>
+
+
     </>
   )
 }

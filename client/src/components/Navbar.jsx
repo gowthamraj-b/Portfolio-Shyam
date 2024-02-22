@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
+
 export default function Navbar() {
   const elements = [
     { name: "Home", link: '/' },
@@ -14,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="flex md:justify-around items-center bg-black text-white fixed w-full h-20">
       <div>
-        <h5 className='font-signature text-5xl px-10 mx-5'> <span className='text-green-500'>S</span>hyam</h5>
+        <h5 className='font-signature text-5xl px-10 mx-5'> <span className='text-green-500'>P</span>ortfolio</h5>
       </div>
 
       {/* Navigation for medium and larger screens */}
@@ -41,7 +42,7 @@ export default function Navbar() {
 
       {/* Mobile menu for small screens */}
       {open && (
-<ul className="flex flex-col justify-center items-end top-20 my-2 py-4 px-2 right-0 absolute w-full md:hidden backdrop-blur-md  text-green-500">
+<ul className="flex flex-col justify-center items-end top-20 my-2 py-4 px-2 right-0 absolute w-full md:hidden backdrop-blur-sm  text-green-500">
           {elements.map((rout) => (
             <Link to={rout.link} key={rout.name}>
               <li
