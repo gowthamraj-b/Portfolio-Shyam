@@ -1,19 +1,19 @@
-import {BrowserRouter,Routes,Route,useLocation } from 'react-router-dom'
-import LandingPage from './pages/LandingPage'
+// App.jsx
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import './css/transform.css'; // Import the CSS file
+
 function App() {
-
-
   return (
-<BrowserRouter>
-
+    <BrowserRouter>
       <Routes>
-        <Route path='/' element={<LandingPage />} />
-        
+        <Route path="/" element={<LandingPage />} />
+
       </Routes>
-  </BrowserRouter>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
-
+export default App;
 

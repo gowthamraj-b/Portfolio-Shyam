@@ -1,25 +1,17 @@
-import React from 'react'
+import React from 'react';
+import '../../css/card.css';
 
-export default function () {
-    
+export default function MyComponent({ current_projects }) {
   return (
-    <> 
-    
-    <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden shadow-md">
-      <div className="md:flex">
-        <div className="md:flex-shrink-0">
-          <img className="h-48 w-full object-cover md:w-48" src="path-to-your-image" alt="Card Image" />
-        </div>
-        <div className="p-8">
-          <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">Card Title</div>
-          <p className="mt-2 text-gray-600">{}</p>
-          <div className="mt-4">
-            <button className="bg-indigo-500 text-white py-2 px-4 rounded">Learn More</button>
-          </div>
-        </div>
-      </div>
+    <div className='flex flex-wrap justify-center lg:gap-14 lg:justify-between lg:mt-6'>
+      {current_projects.map((project) => (
+        <button
+          key={project.id}
+          className='button_p lg:w-1/4 md: w-full lg:mb-0 mb-6 px-4 py-2 border lg:h-20  ' // Adjust the height as per your design
+        >
+          <p className='text-center'>{project.name}</p>
+        </button>
+      ))}
     </div>
-
-    </>
-  )
+  );
 }

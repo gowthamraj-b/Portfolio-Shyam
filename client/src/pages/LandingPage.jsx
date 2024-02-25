@@ -9,7 +9,7 @@ export default function LandingPage() {
 
     <Navbar/>
     <Home/>
-    {/* <About/> */}
+    <About/>
     
     </>
   )
