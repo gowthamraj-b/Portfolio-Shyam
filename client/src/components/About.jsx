@@ -19,13 +19,13 @@ export default function About() {
       <div id="about" className='flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black '> {/* Added mt-16 for margin-top */}
         <div className='m-auto mt-36 md:mb-24'>
 
-          <section className='w-full text-white sm:h-1/4 md:h-1/3 lg:h-1/2 flex flex-col justify-center text-center px-4'>
+          <section className='w-full text-white sm:h-1/4 md:h-1/3 lg:h-1/2 flex flex-col justify-center text-center px-4 '>
             <h2 className='text-4xl font-bold text-slate-200 underline decoration-4 decoration-green-500 font my-6'>
               About Me
             </h2>
-<p className='text-white  sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl'>
-  Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
-</p>
+            <p className='text-white  sm:text-xl md:text-2xl lg:text-2xl xl:text-2xl'>
+              Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology
+            </p>
           </section>
 
           <div className='flex flex-col sm:flex-row justify-around my-14 xl:mx-28'>
@@ -46,7 +46,7 @@ export default function About() {
                 <p className='mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
                   I'm open to <strong>Job</strong> opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.
                 </p>
-                {/* <MyskillBtn/> */}
+                <MyskillBtn/>
               </div>
             </section>
 

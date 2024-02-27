@@ -19,6 +19,7 @@
     font-size: var(--fs-size);
     font-family: "Arial";
     position: relative;
+
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);

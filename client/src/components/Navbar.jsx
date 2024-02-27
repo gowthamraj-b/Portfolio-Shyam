@@ -7,14 +7,14 @@ export default function Navbar() {
     { name: "Home", link: 'home' },
     { name: "About Me", link: 'about' },
     { name: "Projects", link: "projects" },
-    { name: "Contact", link: "contact" }
+    { name: "Contact", link: "cont_page" }
   ];
   const [open, setOpen] = useState(false);
 
   return (
     <nav className="flex md:justify-around items-center bg-black text-white fixed w-full h-20 bg-opacity-90">
       <div>
-        <h5 className='font-signature text-5xl px-10 mx-5'> <span className='text-green-500'>S</span>hyam</h5>
+        <h5 className='font-signature text-5xl px-10 mx-5 text-white'> <span className='text-green-500'>S</span>hyam</h5>
       </div>
 
       {/* Navigation for medium and larger screens */}
@@ -37,9 +37,9 @@ export default function Navbar() {
       {/* Hamburger menu icon for small screens */}
       <div
         onClick={() => setOpen(!open)}
-        className="md:hidden absolute right-8 top-6 cursor-pointer w-7 h-7 text-primary"
+        className="md:hidden absolute right-8 top-6 cursor-pointer w-7 h-7 text-primary text-white"
       >
-        {open ? <XMarkIcon /> : <Bars3Icon />}
+        {open ? <XMarkIcon className='text-white' /> : <Bars3Icon className='text-green-500' />}
       </div>
 
       {/* Mobile menu for small screens */}

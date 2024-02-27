@@ -17,7 +17,7 @@ export default function Home() {
         <div className='flex justify-center items-center h-full px-5'>
           <div className='flex flex-col items-center'>
             <div className='flex flex-col items-center text-center '>
-              <h3 className='font-signature font-thin text-6xl mb-7  tracking-wider'>Hi, <span className='text-green-400'>I'm</span> Shyam</h3>
+              <h3 className='font-signature font-thin text-6xl mb-7 text-white  tracking-wider'>Hi, <span className='text-green-400'>I'm</span> Shyam</h3>
               <TypeAnimation
                 className="font-semibold text-transparent leading-10 bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 items-center "
                 sequence={[
