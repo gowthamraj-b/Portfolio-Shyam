@@ -14,7 +14,7 @@ export default function SocialBar() {
         </div>
         <div className="my-1">
           <a
-            href="https://www.instagram.com/gowthamrajlegend/"
+            href="https://www.instagram.com/shyam__113/"
             className="p-3 hover:bg-slate-400 block rounded transition-all duration-500"
           >
             <img src={Insta} alt="" className="w-10 h-10" />
@@ -22,7 +22,7 @@ export default function SocialBar() {
         </div>
         <div className="my-1">
           <a
-            href="https://github.com/gowthamrajlegend/" 
+            href="https://github.com/TRshyam" 
             className="p-3 hover:bg-slate-400 block rounded transition-all duration-500"
           >
             <img src={GitHub} alt="" className="w-10 h-10" />
