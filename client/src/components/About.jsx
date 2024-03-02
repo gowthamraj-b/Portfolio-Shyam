@@ -46,7 +46,10 @@ export default function About() {
                 <p className='mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
                   I'm open to <strong>Job</strong> opportunities where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <strong>contact</strong> me.
                 </p>
+                <div className='-z-20'>
                 <MyskillBtn/>
+
+                </div>
               </div>
             </section>
 

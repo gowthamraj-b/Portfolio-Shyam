@@ -15,7 +15,7 @@ const Skills = ({ onClose }) => {
       <div>
 
         <button
-    class="top-5 right-4 absolute border-2 border-black group hover:border-green-500 w-8 h-8 duration-500 overflow-hidden"
+    class="z-50 top-5 right-4 absolute border-2 border-black group hover:border-green-500 w-8 h-8 duration-500 overflow-hidden"
     onClick={onClose}
     type="button"
   >
