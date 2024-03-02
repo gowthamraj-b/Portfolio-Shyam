@@ -40,7 +40,7 @@ export default function About() {
                 </p>
 
                 <p className='mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
-                  I also like sharing content related to the stuff that I have learned in <strong>Web Development.</strong> Feel free to Connect or Follow me on my <a href='https://github.com/gowthamrajlegend/' className='text-secondary font-bold underline'>Github</a> and <a href='https://www.instagram.com/gowthamrajlegend/' className='text-secondary font-bold underline'>Instagram</a> where I post useful content related to Web Development and Programming
+                  I also like sharing content related to the stuff that I have learned in <strong>Web Development.</strong> Feel free to Connect or Follow me on my <a href='https://github.com/TRshyam/' className='text-secondary font-bold underline'>Github</a> and <a href='https://www.instagram.com/shyam__113/' className='text-secondary font-bold underline'>Instagram</a> where I post useful content related to Web Development and Programming
                 </p>
 
                 <p className='mb-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl'>
