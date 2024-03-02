@@ -17,7 +17,7 @@ export default function About() {
   return (
     <>
       <div id="about" className='flex flex-col min-h-screen bg-gradient-to-b from-gray-800 to-black '> {/* Added mt-16 for margin-top */}
-        <div className='m-auto mt-36 md:mb-24'>
+        <div className='m-auto mt-32 md:mb-24'>
 
           <section className='w-full text-white sm:h-1/4 md:h-1/3 lg:h-1/2 flex flex-col justify-center text-center px-4 '>
             <h2 className='text-4xl font-bold text-slate-200 underline decoration-4 decoration-green-500 font my-6'>

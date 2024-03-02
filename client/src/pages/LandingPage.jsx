@@ -4,6 +4,7 @@ import Home from '../components/Home'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/footer'
+import Con_icons from '../components/Cards/Con_icons'
 
 export default function LandingPage() {
   return (
@@ -13,7 +14,10 @@ export default function LandingPage() {
     <Home/>
     <About/>
     <Contact/>
-    <Footer/>
+    {/* <Footer/> */}
+     <Con_icons/>
+
+
     
     </>
   )

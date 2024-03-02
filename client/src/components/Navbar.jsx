@@ -7,7 +7,7 @@ export default function Navbar() {
     { name: "Home", link: 'home' },
     { name: "About Me", link: 'about' },
     { name: "Projects", link: "projects" },
-    { name: "Contact", link: "cont_page" }
+    { name: "Contact", link: "contact" }
   ];
   const [open, setOpen] = useState(false);
 

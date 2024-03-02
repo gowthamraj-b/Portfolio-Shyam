@@ -3,9 +3,9 @@ import React from 'react'
 export default function footer() {
   return (
     <>    
-        <div className='min-h-64 bg-black text-white'>
+        <div className=' bg-gray-900  text-white'>
             <div className=''>
-                <div className='relative top-20 mx-10'>
+                <div className='relative py-6'>
                     <h2 className='font-signature text-3xl'>
                         Shyam T . R
                     </h2>

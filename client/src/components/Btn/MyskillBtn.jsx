@@ -16,7 +16,7 @@ export default function MyskillBtn() {
 
   return (
     <div>
-      <button className="button" data-text="Awesome" onClick={handleButtonClick}>
+      <button className="button mt-4" data-text="Awesome" onClick={handleButtonClick}>
         <span className="actual-text">&nbsp;skills&nbsp;</span>
         <span aria-hidden="true" className="hover-text">&nbsp;skills&nbsp;</span>
       </button>
