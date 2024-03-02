@@ -10,7 +10,7 @@ const current_projects = [
   { id: 3, name: 'React with Redux' },
   { id: 4, name: 'React Native' },
   { id: 5, name: 'Tensorflow' },
-  { id: 6, name: 'Tensorflow' },
+  { id: 6, name: 'Pytorch' },
 ];
 
 export default function About() {
