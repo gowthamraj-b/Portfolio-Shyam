@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialIcons from '../components/social/social.jsx'
 
 export default function footer() {
   return (
@@ -20,6 +21,8 @@ export default function footer() {
                         </span>
                     </div>
                 </div>
+                
+             <SocialIcons />
 
             </div>
         

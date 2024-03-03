@@ -15,7 +15,7 @@ export default function LandingPage() {
     <About/>
     <Contact/>
     {/* <Footer/> */}
-     <Con_icons/>
+    <Footer />
 
 
     
